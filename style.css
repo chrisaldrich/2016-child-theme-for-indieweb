@@ -1,0 +1,336 @@
+/*
+Theme Name: Twenty Sixteen Child Theme
+Theme URI: http://boffosocko.com/publishing
+Author: Chris Aldrich
+Author URI: http://boffosocko.com
+Description: Child theme for Boffosocko.com; Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Template: twentysixteen
+Version: 1.2.4
+License: GNU GPLv3
+License URI: http://www.gnu.org/copyleft/gpl.html
+Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+*/
+
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../twentysixteen/style.css');
+
+/* =Theme customization starts here. Add your own custom styles.
+-------------------------------------------------------------- */
+
+/* CSS for fixing WordPress internal Link Manager detailed here: http://boffosocko.com/2017/11/10/a-following-page/ */
+ul.xoxo.blogroll > li > a > img {
+    width: 30px;
+    height: 30px;
+}
+
+ul.xoxo.blogroll li{
+    list-style-type: none;
+}
+
+.textwidget a img {
+	display: inline;
+}
+
+a.smblock img.smblock {
+	display: inline;
+}
+
+.entry-content a img {
+	display: inline;
+}
+
+/* Style for buttons to match the theme styling */
+.button {
+	background-color: #83b6cc;
+	border: 2px solid transparent;
+	border-radius: 2em;
+	color: #eff6f9;
+	display: inline-block;
+	font-family: Karla, Arial, sans-serif;
+	font-size: 15.2px;
+	font-size: 0.95rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 1;
+	padding: 1em 3em;
+	text-shadow: none;
+	text-transform: uppercase;
+	transition: background-color 0.125s ease-in;
+	-webkit-appearance: none;
+}
+.button:hover {
+	background-color: transparent;
+	border-color: #83b6cc;
+	color: #83b6cc;
+}
+
+/* Remove excess white space around header image and set up */
+.site-header {
+	padding: 1.5625em 4.5455%;
+	}
+
+#webmention-form {
+	margin-top: 1.875em;
+	font-size: 0.8125rem;
+ }
+
+/* Make the Syndication Links replicate the font characteristics of JetPack */
+/* Set proper fonts for "Syndicated To" text */
+span.syn-text {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+/* Set proper fonts for "Syndicated To" text in comments*/
+div.comment-content > p > cite:before {
+    content: "— ";
+  	font-size: 0.70rem;
+}
+
+div.comment-content > p > cite {
+  	font-size: 0.70rem;
+}
+
+div.comment-content > p {
+	margin: 0 0 0.25em;
+}
+
+div.comment-content > p > span.syn-text:before{
+    content: "\00a0\00a0\00a0\00a0";
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+	  font-size: 0.70rem;
+    font-weight: 400;
+}
+
+/* Hovercard CSS for Kevin Marks' /hovercard.js script for noterlive posts */
+.hovercard{
+	position: relative;
+}
+
+.hovercard .hidden-info{
+	opacity: 0;
+	max-height: 0;
+	max-width: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 1.5em;
+	left: 0;
+	z-index:1;
+}
+
+.hovercard:hover .hidden-info{
+	border: #999 solid 1px;
+	box-shadow: 0 0 1em #999;
+	padding: 0.5em;
+	background: #fcfcfc;
+	opacity: 1;
+	max-height: 20em;
+	max-width: 20em;
+}
+
+/* Custom layout for Instagram posts via DsgnWrksInstagram Importer */
+
+p.igfilter::before{
+	content: "📷 ";
+}
+
+p.igfilter{
+    font-size: 0.9em;
+    margin: 0 0 0.1em
+}
+
+p.iglocation::before{
+	content: "🗺 ";
+}
+
+p.iglocation{
+    font-size: 0.9em;
+    margin: 0 0 0.1em
+}
+
+p.screenLocation::before{
+	content: "🎦 ";
+}
+
+p.screenLocation {
+    font-size: 0.9em;
+    margin: 0 0 0.1em
+}
+
+p.seatLocation::before{
+	content: "💺 ";
+}
+
+p.seatLocation {
+    font-size: 0.9em;
+    margin: 0 0 0.1em
+}
+
+ins {
+    border-left: 2px solid #007acc;
+    text-decoration: none;
+    margin: 10px 0px 10px -2px;
+}
+
+/* Makes the username of Recent comments widget bold */
+span.comment-author-link {
+    font-weight: bold;               
+}
+
+/* Tweaks to post kinds */
+#kind-all .svg-icon {
+  fill: currentColor;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  top: -0.0625em;
+  color: grey;
+}
+
+.response .svg-icon {
+  fill: currentColor;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  top: -0.0625em;
+  color: black;
+}
+
+.response {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.response .kind-icon {
+  margin-right: 3px;
+}
+
+.response blockquote {
+  margin-left: 25px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #eee;
+}
+
+.response .u-url:link {
+  text-decoration: none;
+}
+
+.response .u-url:hover {
+  text-decoration: none;
+}
+
+.response .u-photo, .response .u-featured {
+  padding: 0;
+  margin: 2px;
+}
+
+ul.cites {
+  list-style: none;
+  display: inline;
+}
+
+.embeds {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Fix the thick bottom border in Post Kinds and make it thinner (or maybe non-existent) */
+/*--------------------------------------------------------------
+--------------------------------------------------------------*/
+#kind-all .svg-icon {
+  fill: currentColor;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  top: -0.0625em;
+  color: grey;
+}
+
+.response .svg-icon {
+  fill: currentColor;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  top: -0.0625em;
+  color: black;
+}
+
+.response {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  padding: 5px;
+  font-size: 16px;
+  border-bottom: none;
+}
+.response .kind-icon {
+  margin-right: 3px;
+}
+.response blockquote {
+  margin-left: 25px;
+}
+.response .u-url:link {
+  text-decoration: none;
+}
+.response .u-url:hover {
+  text-decoration: none;
+}
+.response .u-photo, .response .u-featured {
+  padding: 0;
+  margin: 2px;
+}
+
+ul.cites {
+  list-style: none;
+  display: inline;
+}
+
+.embeds {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=kind.css.map */
+
+/* Theme compat portion for Post Kinds (to remove titles from posts amongst other tweaks) */
+#kind-all .svg-icon{fill:currentColor;padding-left:2px;padding-right:2px;width:24px;height:24px;vertical-align:middle;top:-0.0625em;color:grey}
+
+.response .svg-icon{fill:currentColor;padding-left:2px;padding-right:2px;width:32px;height:32px;vertical-align:middle;top:-0.0625em;color:#000}
+
+.response{margin-bottom:10px;margin-top:10px;margin-left:20px;padding:5px;font-size:16px}
+
+/* .response{margin-bottom:10px;margin-top:10px;margin-left:20px;padding:5px;font-size:16px;border-bottom:inset #D6D6D6} */
+
+.response .kind-icon{margin-right:3px}
+
+.response blockquote{margin-left:25px}
+
+.response .u-url:link{text-decoration:none}
+
+.response .u-url:hover{text-decoration:none}
+
+.response .u-photo,.response .u-featured{padding:0;margin:2px}
+
+ul.cites{list-style:none;display:inline}
+
+.embeds{text-align:center;position:relative;width:100%;margin-top:5px}
+
+.kind-note .entry-title,.kind-bookmark .entry-title,.kind-reply .entry-title,.kind-like .entry-title,.kind-favorite .entry-title,.kind-photo .entry-title,.kind-tag .entry-title,.kind-rsvp .entry-title,.kind-listen .entry-title,.kind-watch .entry-title,.kind-checkin .entry-title,.kind-wish .entry-title,.kind-play .entry-title,.kind-weather .entry-title,.kind-exercise .entry-title,.kind-travel .entry-title,.kind-eat .entry-title,.kind-drink .entry-title,.kind-follow .entry-title,.kind-jam .entry-title,.kind-read .entry-title,.kind-quote .entry-title{display:none}
