@@ -48,7 +48,7 @@
 					do_action( 'twentysixteen_credits' );
 				?>
 				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a> with <a href="http://indieweb.org" rel="nofollow" alt="IndieWebCamp">principles from <img src="http://boffosocko.com/wp-content/uploads/2016/06/indiewebcamp-button.png" alt="IndieWebCamp" width="82" height="15" /></a>  
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a> with <a href="http://indieweb.org" rel="nofollow" alt="IndieWebCamp">principles from <img src="https://indieweb.org/images/4/4a/indiewebcamp-button.png" alt="IndieWebCamp" width="82" height="15" /></a>  
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->
